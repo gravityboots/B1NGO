@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    margin: auto;
+    padding: 1em;
+    height: 100vh;
+    overflow: scroll;
+
+    font-family: "Space Grotesk";
+}
+
+body.served {
+    background: #000000 no-repeat url("/images/bg8.jpg") center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    padding-bottom: 1em;
+}
+
+.contentbox {
+    margin: auto;
+    width: 50em;
+    background: #000a;
+    border-radius: 10px;
+    padding: 1em;
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+.contentbox div * {
+    display: block;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: stretch;
+
+    width: 72vh;
+    height: 72vh;
+    max-width: 512px;
+    max-height: 512px;
+    padding: 1em;
+    border: 2px solid #000000;
+}
+
+.challenge-row {
+    margin-block: 5px;
+    height: 20%;
+    padding: 0 5px;
+}
+
+.challenge-square {
+    margin-inline: 5px; 
+    height: 100%;
+    background-color: #000000;
+    background: radial-gradient(circle, rgb(0, 0, 0) 30%, rgb(60, 60, 60) 100%);
+    border: 1px solid #888;
+    border-radius: 50%;
+    overflow-wrap: anywhere;
+    text-decoration: none;
+    font-family: "Space Mono";
+    font-size: xx-large;
+    color: #ffbf00;
+    text-shadow: #ffbf00 0 0 5px;
+}
+
+.challenge-square:hover {
+    color: #fff200;
+    text-shadow: #fff200 0 0 15px;
+}
+
+.challenge-square.disabled {
+    color: #777777;
+    text-shadow: none;
+}
+
+.challenge-square.disabled:hover {
+    color: #aaaaaa;
+    text-shadow: #777777 0 0 5px;
+}
+
+pre {
+    font-family: "Space Mono", monospace;
+    white-space: pre-wrap; /* Wrap text */
+}
+
+#input-box {
+    font-family: "Space Mono", monospace;
+    padding: 1em;
+    white-space: pre; /* No wrap */
+}
+
+.scrollable {
+    max-height: 70%;
+    overflow: scroll;
+    font-family: monospace;
+}
+
+.tborder, .tborder td, .tborder th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0 5px;
+}
